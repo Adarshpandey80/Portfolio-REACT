@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import './styles/globals.css';
 import Header from './components/Header';
-// import Hero from './components/Hero';
-// import About from './components/About';
+  import Hero from './components/Hero';
+ import About from './components/About';
 // import Internships from './components/Internships';
 // import Skills from './components/Skills';
 // import Projects from './components/Projects';
 // import Contact from './components/Contact';
-// import Footer from './components/Footer';
+ //import Footer from './components/Footer';
 // import { useParticles } from './hooks/useParticles';
 
 function App() {
@@ -36,15 +36,15 @@ function App() {
     <div className="App">
       <div id="particles-js"></div>
       <Header />
-      {/* <main>
+      <main>
         <Hero />
         <About />
-        <Internships />
+        {/* <Internships />
         <Skills />
         <Projects />
-        <Contact />
-      </main> */}
-      {/* <Footer /> */}
+        <Contact /> */}
+      </main>
+      {/* { <Footer /> } */}
     </div>
   );
 }
