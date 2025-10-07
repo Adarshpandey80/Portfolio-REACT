@@ -1,0 +1,124 @@
+/* Internships Section */
+.internships-section {
+  background: rgba(26, 26, 46, 0.7);
+}
+
+.internships-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.internship-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  opacity: 0;
+  transform: translateY(50px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.internship-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.internship-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary);
+}
+
+.internship-icon {
+  color: var(--primary);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 60px;
+  font-size: 1.5rem;
+}
+
+.internship-content {
+  flex: 1;
+}
+
+.internship-title {
+  font-size: 1.5rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.internship-role {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.internship-duration {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.internship-details {
+  margin-top: 1rem;
+}
+
+.internship-details li {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.internship-details li::before {
+  content: "▹";
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive Internships */
+@media (max-width: 992px) {
+  .internships-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .internship-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .internship-icon {
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .internship-details li {
+    padding-left: 0;
+    text-align: left;
+  }
+  
+  .internship-details li::before {
+    position: static;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .internships-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .internship-card {
+    padding: 1rem;
+  }
+}

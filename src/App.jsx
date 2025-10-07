@@ -3,15 +3,15 @@ import './styles/globals.css';
 import Header from './components/Header';
   import Hero from './components/Hero';
  import About from './components/About';
-// import Internships from './components/Internships';
-// import Skills from './components/Skills';
+ import Internships from './components/Internship';
+ import Skills from './components/Skills';
 // import Projects from './components/Projects';
 // import Contact from './components/Contact';
  //import Footer from './components/Footer';
-// import { useParticles } from './hooks/useParticles';
+import { useParticles } from './hooks/useParticles';
 
 function App() {
-  // useParticles();
+  useParticles();
 
   useEffect(() => {
     // Add Font Awesome
@@ -39,9 +39,9 @@ function App() {
       <main>
         <Hero />
         <About />
-        {/* <Internships />
+        <Internships />
         <Skills />
-        <Projects />
+        {/* <Projects />
         <Contact /> */}
       </main>
       {/* { <Footer /> } */}
