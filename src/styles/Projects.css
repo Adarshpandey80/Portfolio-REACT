@@ -1,0 +1,210 @@
+/* Projects Section */
+.projects-section {
+  background: rgba(26, 26, 46, 0.7);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  opacity: 0;
+  transform: translateY(50px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.project-card:hover .project-image {
+  background: linear-gradient(45deg, var(--secondary), var(--accent2));
+}
+
+.project-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: 0.5s;
+}
+
+.project-card:hover .project-image::before {
+  left: 100%;
+}
+
+.project-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: var(--text);
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-description {
+  margin-bottom: 1.2rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  background: rgba(54, 209, 220, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  color: var(--accent);
+  border: 1px solid rgba(54, 209, 220, 0.3);
+  transition: var(--transition);
+}
+
+.tech-tag:hover {
+  background: rgba(54, 209, 220, 0.2);
+  transform: translateY(-2px);
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.project-link {
+  color: var(--primary);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: rgba(108, 99, 255, 0.1);
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-link:hover {
+  color: var(--text);
+  background: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+}
+
+/* Project-specific icon colors */
+.project-card:nth-child(1) .project-image {
+  background: linear-gradient(45deg, #FF6584, #FF9A8B);
+}
+
+.project-card:nth-child(2) .project-image {
+  background: linear-gradient(45deg, #36D1DC, #6C63FF);
+}
+
+.project-card:nth-child(3) .project-image {
+  background: linear-gradient(45deg, #FFE569, #FF9A8B);
+}
+
+.project-card:nth-child(4) .project-image {
+  background: linear-gradient(45deg, #6C63FF, #36D1DC);
+}
+
+.project-card:nth-child(5) .project-image {
+  background: linear-gradient(45deg, #FF9A8B, #FF6584);
+}
+
+/* Responsive Projects */
+@media (max-width: 992px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .project-link {
+    justify-content: center;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-card {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .project-content {
+    padding: 1rem;
+  }
+  
+  .project-tech {
+    gap: 0.3rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+  
+  .project-title {
+    font-size: 1.2rem;
+  }
+}

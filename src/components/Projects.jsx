@@ -1,0 +1,101 @@
+import { useInView } from 'react-intersection-observer';
+import '../styles/Projects.css';
+
+const ProjectCard = ({ project, index }) => {
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+    delay: index * 200
+  });
+
+  return (
+    <div ref={ref} className={`project-card ${inView ? 'in-view' : ''}`}>
+      <div className="project-image">
+        <i className={project.icon} style={{ fontSize: '4rem', color: 'white' }}></i>
+      </div>
+      <div className="project-content">
+        <h3 className="project-title">{project.title}</h3>
+        <p className="project-description">{project.description}</p>
+        <div className="project-tech">
+          {project.technologies.map((tech, idx) => (
+            <span key={idx} className="tech-tag">{tech}</span>
+          ))}
+        </div>
+        <div className="project-links">
+          <a href={project.github} className="project-link" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i> Code
+          </a>
+          {project.live && (
+            <a href={project.live} className="project-link" target="_blank" rel="noopener noreferrer">
+              <i className="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Projects = () => {
+  const projects = [
+    {
+      title: "Traveling Website",
+      description: "Implemented user login and registration with Firebase Authentication, allowing users to save their favorite destinations and trips. A comprehensive travel platform built with MERN stack for seamless travel planning and booking experiences.",
+      technologies: ["MongoDB", "Express.js", "React", "Node.js", "MongoosePassword Auth", "REST API"],
+      icon: "fas fa-plane",
+      github: "https://github.com/Adarshpandey80/travel-website",
+      live: "https://travel-website-adarsh.vercel.app"
+    },
+    {
+      title: "Worker Finder",
+      description: "Worker Finder is a simple web platform that connects users with local skilled workers like plumbers, carpenters, and electricians. Any registered user can act as both a service seeker and service provider (worker).",
+      technologies: ["Node.js", "Express.js", "MongoDB", "MongoosePassword Auth", "REST API", "Bootstrap"],
+      icon: "fas fa-briefcase",
+      github: "https://github.com/Adarshpandey80/worker-finder",
+      live: "https://worker-finder-adarsh.herokuapp.com"
+    },
+    {
+      title: "Azautomobile E-commerce",
+      description: "Azautomobile is a fully responsive eCommerce website that allows users to browse and purchase vehicles including cars, bikes, and cycles. The platform features a clean UI with intuitive navigation and product listings.",
+      technologies: ["HTML", "CSS", "JavaScript", "LocalStorage", "Responsive Design"],
+      icon: "fas fa-car",
+      github: "https://github.com/Adarshpandey80/azautomobile",
+      live: "https://adarshpandey80.github.io/azautomobile"
+    },
+    {
+      title: "Weather Forecast App",
+      description: "Developed a React-based weather application integrating with OpenWeatherMap API to display real-time and forecasted weather data for global locations with interactive charts and location-based services.",
+      technologies: ["React", "OpenWeather API", "CSS3", "Responsive Design"],
+      icon: "fas fa-cloud-sun",
+      github: "https://github.com/Adarshpandey80/weather-app",
+      live: "https://weather-app-adarshpandey.vercel.app"
+    },
+    {
+      title: "Simon Saga Game",
+      description: "Contributed to the design and development of Simon Saga, a puzzle-based adventure game. Utilized modern web technologies to create an engaging and interactive gaming experience with smooth animations.",
+      technologies: ["JavaScript", "HTML5", "CSS3" , "DOM Manipulation"],
+      icon: "fas fa-gamepad",
+      github: "https://github.com/Adarshpandey80/simon-saga",
+      live: "https://adarshpandey80.github.io/simon-saga"
+    }
+  ];
+
+  return (
+    <section id="projects" className="projects-section">
+      <div className="container">
+        <h2 className="section-title">Projects</h2>
+        <div className="projects-container">
+          {projects.map((project, index) => (
+            <ProjectCard 
+              key={project.title}
+              project={project}
+              index={index}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

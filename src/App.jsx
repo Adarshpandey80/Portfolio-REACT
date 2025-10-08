@@ -5,8 +5,8 @@ import Header from './components/Header';
  import About from './components/About';
  import Internships from './components/Internship';
  import Skills from './components/Skills';
-// import Projects from './components/Projects';
-// import Contact from './components/Contact';
+ import Project from './components/Projects';
+ import Contact from './components/Contact';
  //import Footer from './components/Footer';
 import { useParticles } from './hooks/useParticles';
 
@@ -41,8 +41,8 @@ function App() {
         <About />
         <Internships />
         <Skills />
-        {/* <Projects />
-        <Contact /> */}
+        <Project />
+        <Contact />
       </main>
       {/* { <Footer /> } */}
     </div>

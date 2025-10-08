@@ -21,6 +21,23 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.internship-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--primary), var(--accent));
+  transition: var(--transition);
+}
+
+.internship-card:hover::before {
+  width: 6px;
 }
 
 .internship-card.in-view {
@@ -51,18 +68,29 @@
   font-size: 1.5rem;
   color: var(--text);
   margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .internship-role {
   color: var(--primary);
   font-weight: 600;
   margin-bottom: 0.3rem;
+  font-size: 1.1rem;
 }
 
 .internship-duration {
-  color: var(--text-secondary);
+  color: var(--accent);
   margin-bottom: 1rem;
   font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.3rem 0.8rem;
+  background: rgba(54, 209, 220, 0.1);
+  border-radius: 20px;
+  display: inline-block;
+  border: 1px solid rgba(54, 209, 220, 0.3);
 }
 
 .internship-details {
@@ -71,9 +99,10 @@
 
 .internship-details li {
   color: var(--text-secondary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   position: relative;
   padding-left: 1.5rem;
+  line-height: 1.5;
 }
 
 .internship-details li::before {
@@ -81,6 +110,20 @@
   color: var(--primary);
   position: absolute;
   left: 0;
+  font-weight: bold;
+}
+
+/* Highlight current/future internships */
+.internship-card:first-child .internship-duration {
+  background: rgba(255, 101, 132, 0.1);
+  border-color: rgba(255, 101, 132, 0.3);
+  color: var(--secondary);
+}
+
+.internship-card:nth-child(2) .internship-duration {
+  background: rgba(255, 229, 105, 0.1);
+  border-color: rgba(255, 229, 105, 0.3);
+  color: var(--accent3);
 }
 
 /* Responsive Internships */
@@ -120,5 +163,13 @@
   
   .internship-card {
     padding: 1rem;
+  }
+  
+  .internship-title {
+    font-size: 1.3rem;
+  }
+  
+  .internship-role {
+    font-size: 1rem;
   }
 }

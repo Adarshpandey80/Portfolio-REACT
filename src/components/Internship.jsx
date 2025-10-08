@@ -1,5 +1,6 @@
 import { useInView } from 'react-intersection-observer';
 import '../styles/Internships.css';
+
 const InternshipCard = ({ internship, index }) => {
   const [ref, inView] = useInView({
     threshold: 0.1,
@@ -10,7 +11,7 @@ const InternshipCard = ({ internship, index }) => {
   return (
     <div ref={ref} className={`internship-card ${inView ? 'in-view' : ''}`}>
       <div className="internship-icon">
-        <i className="fas fa-briefcase"></i>
+        <i className={internship.icon}></i>
       </div>
       <div className="internship-content">
         <h3 className="internship-title">{internship.company}</h3>
@@ -29,35 +30,40 @@ const InternshipCard = ({ internship, index }) => {
 const Internships = () => {
   const internships = [
     {
-      company: "Code Clause",
-      role: "Web Development Intern",
-      duration: "June 2023 - July 2023",
+      company: "CodSoft",
+      role: "Front-end Engineer",
+      duration: "1 Month",
+      icon: "fas fa-laptop-code",
       details: [
-        "Developed responsive web applications using HTML, CSS, and JavaScript",
-        "Implemented front-end features and user interfaces",
-        "Collaborated with team members on project development"
+        "Worked as a Frontend Developer, creating interactive and visually appealing web interfaces",
+        "Built responsive UI components using HTML, CSS, JavaScript, and modern frameworks",
+        "Improved website performance and cross-browser compatibility",
+        "Collaborated with designers and backend teams to deliver seamless, user-friendly applications"
       ]
     },
+  
     {
-      company: "Bharat Intern",
+      company: "Cybrom Technology",
       role: "Web Development Intern",
-      duration: "July 2023 - August 2023",
+      duration: "2 Months",
+      icon: "fas fa-laptop-code",
       details: [
-        "Built full-stack web applications using MERN stack",
-        "Worked on RESTful API development and integration",
-        "Implemented authentication and authorization features"
+        "Developed and optimized scalable web applications using MongoDB, Express.js, React.js, and Node.js.",
+        "Collaborated with cross-functional teams to deliver secure, high-performance, and user-friendly solutions.",
+        "Implemented RESTful APIs, authentication, and database management to ensure efficiency and reliability."
       ]
-    }
+    },
+   
   ];
 
   return (
-    <section id="internships">
+    <section id="internships" className="internships-section">
       <div className="container">
         <h2 className="section-title">Internships</h2>
         <div className="internships-container">
           {internships.map((internship, index) => (
             <InternshipCard 
-              key={internship.company}
+              key={`${internship.company}-${internship.duration}`}
               internship={internship}
               index={index}
             />
