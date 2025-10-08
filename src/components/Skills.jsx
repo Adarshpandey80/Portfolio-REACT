@@ -1,6 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useRef } from 'react';
 import '../styles/Skills.css';
+
 const SkillCategory = ({ category, index }) => {
   const [ref, inView] = useInView({
     threshold: 0.1,
@@ -34,6 +35,14 @@ const SkillCategory = ({ category, index }) => {
         </div>
       </div>
       
+      <div className="skill-list">
+        {category.technologies.map((tech, idx) => (
+          <span key={idx} className="skill-item">
+            <i className={tech.icon}></i> {tech.name}
+          </span>
+        ))}
+      </div>
+      
       <div className="skill-levels">
         {category.skills.map((skill, idx) => (
           <div key={skill.name} className="skill-level">
@@ -46,6 +55,7 @@ const SkillCategory = ({ category, index }) => {
                 ref={el => progressRefs.current[idx] = el}
                 className="skill-progress"
                 style={{ width: '0%' }}
+                data-width={skill.level}
               ></div>
             </div>
           </div>
@@ -58,72 +68,89 @@ const SkillCategory = ({ category, index }) => {
 const Skills = () => {
   const skillsData = [
     {
-      title: "Frontend Development",
-      subtitle: "Modern Web Technologies",
+      title: "Languages",
+      subtitle: "Core programming languages",
       icon: "fas fa-code",
+      technologies: [
+        { name: "C++", icon: "fab fa-cuttlefish" },
+        { name: "JavaScript", icon: "fab fa-js-square" }
+      ],
       skills: [
-        { name: "HTML/CSS", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "React.js", level: 80 },
-        { name: "Bootstrap", level: 85 },
-        { name: "Tailwind CSS", level: 75 }
+        { name: "C++", level: 85 },
+        { name: "JavaScript", level: 90 }
       ]
     },
     {
-      title: "Backend Development",
-      subtitle: "Server & Database",
+      title: "Front-End",
+      subtitle: "User interface technologies",
+      icon: "fas fa-paint-brush",
+      technologies: [
+        { name: "HTML", icon: "fab fa-html5" },
+        { name: "CSS", icon: "fab fa-css3-alt" },
+        { name: "JavaScript", icon: "fab fa-js-square" },
+        { name: "React.js", icon: "fab fa-react" },
+        { name: "Redux Toolkit", icon: "fas fa-cube" },
+        { name: "Bootstrap", icon: "fab fa-bootstrap" },
+        { name: "Material UI", icon: "fas fa-palette" },
+        { name: "Tailwind CSS", icon: "fas fa-wind" }
+      ],
+      skills: [
+        { name: "React.js", level: 88 },
+        { name: "CSS Frameworks", level: 82 }
+      ]
+    },
+    {
+      title: "Back-End",
+      subtitle: "Server-side technologies",
       icon: "fas fa-server",
+      technologies: [
+        { name: "Node.js", icon: "fab fa-node-js" },
+        { name: "Express.js", icon: "fas fa-bolt" }
+      ],
       skills: [
         { name: "Node.js", level: 80 },
-        { name: "Express.js", level: 75 },
-        { name: "MongoDB", level: 70 },
-        { name: "RESTful APIs", level: 80 },
-        { name: "JWT Authentication", level: 70 }
+        { name: "Express.js", level: 85 }
       ]
     },
     {
-      title: "Programming Languages",
-      subtitle: "Core Development",
-      icon: "fas fa-laptop-code",
+      title: "Database",
+      subtitle: "Data storage technologies",
+      icon: "fas fa-database",
+      technologies: [
+        { name: "MongoDB", icon: "fas fa-leaf" },
+        { name: "SQL", icon: "fas fa-database" }
+      ],
       skills: [
-        { name: "JavaScript", level: 85 },
-        { name: "Python", level: 70 },
-        { name: "Java", level: 65 },
-        { name: "C++", level: 60 }
+        { name: "MongoDB", level: 78 },
+        { name: "SQL", level: 75 }
       ]
     },
     {
-      title: "Tools & Technologies",
-      subtitle: "Development Ecosystem",
+      title: "Developer Tools",
+      subtitle: "Development environment",
       icon: "fas fa-tools",
+      technologies: [
+        { name: "GitHub", icon: "fab fa-github" },
+        { name: "VS Code", icon: "fas fa-code" },
+        { name: "Figma", icon: "fab fa-figma" },
+        { name: "Jira", icon: "fab fa-jira" }
+      ],
       skills: [
-        { name: "Git/GitHub", level: 80 },
-        { name: "VS Code", level: 90 },
-        { name: "Postman", level: 75 },
-        { name: "MongoDB Atlas", level: 70 },
-        { name: "Heroku", level: 65 }
+        { name: "GitHub", level: 90 },
+        { name: "VS Code", level: 95 }
       ]
     },
     {
-      title: "Soft Skills",
-      subtitle: "Professional Abilities",
-      icon: "fas fa-users",
+      title: "Methodologies",
+      subtitle: "Development approaches",
+      icon: "fas fa-project-diagram",
+      technologies: [
+        { name: "Agile", icon: "fas fa-running" },
+        { name: "Scrum", icon: "fas fa-tasks" }
+      ],
       skills: [
-        { name: "Problem Solving", level: 85 },
-        { name: "Team Collaboration", level: 80 },
-        { name: "Communication", level: 75 },
-        { name: "Time Management", level: 80 }
-      ]
-    },
-    {
-      title: "Learning & Growth",
-      subtitle: "Continuous Improvement",
-      icon: "fas fa-graduation-cap",
-      skills: [
-        { name: "Quick Learning", level: 90 },
-        { name: "Adaptability", level: 85 },
-        { name: "Creativity", level: 80 },
-        { name: "Attention to Detail", level: 85 }
+        { name: "Agile", level: 85 },
+        { name: "Scrum", level: 80 }
       ]
     }
   ];
@@ -131,7 +158,7 @@ const Skills = () => {
   return (
     <section id="skills">
       <div className="container">
-        <h2 className="section-title">Skills & Expertise</h2>
+        <h2 className="section-title">Technical Skills</h2>
         <div className="skills-container">
           {skillsData.map((category, index) => (
             <SkillCategory 

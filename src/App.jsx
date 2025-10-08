@@ -7,7 +7,7 @@ import Header from './components/Header';
  import Skills from './components/Skills';
  import Project from './components/Projects';
  import Contact from './components/Contact';
- //import Footer from './components/Footer';
+ import Footer from './components/Footer';
 import { useParticles } from './hooks/useParticles';
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
         <Project />
         <Contact />
       </main>
-      {/* { <Footer /> } */}
+      { <Footer /> }
     </div>
   );
 }
