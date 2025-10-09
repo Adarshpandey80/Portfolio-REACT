@@ -58,7 +58,7 @@ const Contact = () => {
               </p>
               <div className="form-cta">
                 <a 
-                  href="https://forms.gle/your-google-form-link" 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfYrSo-9cDpCN87V8SBy2ARpfbtPp9lb2Y51KVV6t0rFpB3hw/viewform?usp=dialog" 
                   className="btn btn-primary form-link"
                   target="_blank" 
                   rel="noopener noreferrer"
