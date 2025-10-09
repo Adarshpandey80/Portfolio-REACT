@@ -6,16 +6,16 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="social-links">
-          <a href="https://github.com/adarsh" className="social-link" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Adarshpandey80" className="social-link" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i>
           </a>
-          <a href="https://linkedin.com/in/adarsh" className="social-link" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/adarshpandey80/" className="social-link" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin-in"></i>
           </a>
-          <a href="https://twitter.com/adarsh" className="social-link" target="_blank" rel="noopener noreferrer">
+          {/* <a href="https://twitter.com/adarsh" className="social-link" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-twitter"></i>
-          </a>
-          <a href="mailto:adarshpandey@gmail.com" className="social-link">
+          </a> */}
+          <a href="mailto:adarshpandey8058@gmail.com" className="social-link">
             <i className="fas fa-envelope"></i>
           </a>
         </div>
