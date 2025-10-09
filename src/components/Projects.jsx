@@ -43,40 +43,40 @@ const Projects = () => {
       description: "Implemented user login and registration with Firebase Authentication, allowing users to save their favorite destinations and trips. A comprehensive travel platform built with MERN stack for seamless travel planning and booking experiences.",
       technologies: ["MongoDB", "Express.js", "React", "Node.js", "MongoosePassword Auth", "REST API"],
       icon: "fas fa-plane",
-      github: "https://github.com/Adarshpandey80/travel-website",
-      live: "https://travel-website-adarsh.vercel.app"
+      github: "https://github.com/Adarshpandey80/Wonderlust",
+      // live: "https://travel-website-adarsh.vercel.app"
     },
     {
       title: "Worker Finder",
       description: "Worker Finder is a simple web platform that connects users with local skilled workers like plumbers, carpenters, and electricians. Any registered user can act as both a service seeker and service provider (worker).",
       technologies: ["Node.js", "Express.js", "MongoDB", "MongoosePassword Auth", "REST API", "Bootstrap"],
       icon: "fas fa-briefcase",
-      github: "https://github.com/Adarshpandey80/worker-finder",
-      live: "https://worker-finder-adarsh.herokuapp.com"
+      github: "https://github.com/Adarshpandey80/WorkerFinder",
+      // live: "https://worker-finder-adarsh.herokuapp.com"
     },
     {
       title: "Azautomobile E-commerce",
       description: "Azautomobile is a fully responsive eCommerce website that allows users to browse and purchase vehicles including cars, bikes, and cycles. The platform features a clean UI with intuitive navigation and product listings.",
       technologies: ["HTML", "CSS", "JavaScript", "LocalStorage", "Responsive Design"],
       icon: "fas fa-car",
-      github: "https://github.com/Adarshpandey80/azautomobile",
-      live: "https://adarshpandey80.github.io/azautomobile"
+      github: "https://github.com/Adarshpandey80/AzAutomobils",
+      live: "https://add-to-card-az-automobile-dzrr.vercel.app/"
     },
     {
       title: "Weather Forecast App",
       description: "Developed a React-based weather application integrating with OpenWeatherMap API to display real-time and forecasted weather data for global locations with interactive charts and location-based services.",
       technologies: ["React", "OpenWeather API", "CSS3", "Responsive Design"],
       icon: "fas fa-cloud-sun",
-      github: "https://github.com/Adarshpandey80/weather-app",
-      live: "https://weather-app-adarshpandey.vercel.app"
+      github: "https://github.com/Adarshpandey80/Weather-Forecast",
+      live: "https://weather-forecast-xh9v.vercel.app/"
     },
     {
       title: "Simon Saga Game",
       description: "Contributed to the design and development of Simon Saga, a puzzle-based adventure game. Utilized modern web technologies to create an engaging and interactive gaming experience with smooth animations.",
       technologies: ["JavaScript", "HTML5", "CSS3" , "DOM Manipulation"],
       icon: "fas fa-gamepad",
-      github: "https://github.com/Adarshpandey80/simon-saga",
-      live: "https://adarshpandey80.github.io/simon-saga"
+      github: "https://github.com/Adarshpandey80/SimonSage-Game",
+      live: "https://simon-sage-game.vercel.app/"
     }
   ];
 

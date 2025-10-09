@@ -45,24 +45,7 @@ const Contact = () => {
                 <p>Uttar Pradesh, India</p>
               </div>
             </div>
-            <div className="contact-item">
-              <div className="contact-icon">
-                <i className="fab fa-linkedin"></i>
-              </div>
-              <div>
-                <h3>LinkedIn</h3>
-                <p>linkedin.com/in/adarshpandey80</p>
-              </div>
-            </div>
-            <div className="contact-item">
-              <div className="contact-icon">
-                <i className="fab fa-github"></i>
-              </div>
-              <div>
-                <h3>GitHub</h3>
-                <p>github.com/Adarshpandey80</p>
-              </div>
-            </div>
+           
           </div>
           
           <div ref={formRef} className={`contact-form-container ${formInView ? 'in-view' : ''}`}>
@@ -83,9 +66,7 @@ const Contact = () => {
                   <i className="fab fa-google"></i>
                   Open Contact Form
                 </a>
-                <p className="form-note">
-                  You'll be redirected to Google Forms to send your message
-                </p>
+            
               </div>
             </div>
           </div>

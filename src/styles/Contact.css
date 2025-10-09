@@ -61,10 +61,7 @@
   font-size: 1.1rem;
 }
 
-.contact-item p {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-}
+
 
 /* Contact Form Container */
 .contact-form-container {

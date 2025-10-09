@@ -20,7 +20,7 @@ const About = () => {
             ref={imageRef}
             className={`about-image ${imageInView ? 'in-view' : ''}`}
           >
-            <img src="/myimg.jpeg" alt="Adarsh Pandey" />
+            <img src="/my.jpeg" alt="Adarsh Pandey" />
           </div>
           <div 
             ref={textRef}
