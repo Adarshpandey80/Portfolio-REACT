@@ -44,7 +44,7 @@ const Projects = () => {
       technologies: ["MongoDB", "Express.js", "React", "Node.js", "MongoosePassword Auth", "REST API"],
       icon: "fas fa-plane",
       github: "https://github.com/Adarshpandey80/Wonderlust",
-      // live: "https://travel-website-adarsh.vercel.app"
+      live: "https://wonderlust-ncbd.onrender.com"
     },
     {
       title: "Worker Finder",
