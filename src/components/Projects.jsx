@@ -52,7 +52,7 @@ const Projects = () => {
       technologies: ["Node.js", "Express.js", "MongoDB", "MongoosePassword Auth", "REST API", "Bootstrap"],
       icon: "fas fa-briefcase",
       github: "https://github.com/Adarshpandey80/WorkerFinder",
-      // live: "https://worker-finder-adarsh.herokuapp.com"
+      live: "https://worker-finder.onrender.com"
     },
     {
       title: "Azautomobile E-commerce",
