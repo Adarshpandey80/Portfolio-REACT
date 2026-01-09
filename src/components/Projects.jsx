@@ -39,7 +39,7 @@ const ProjectCard = ({ project, index }) => {
 const Projects = () => {
   const projects = [
      {
-      title: 'ShoeVerse - E-commerce Platform',
+      title: 'ShoeVerse - Emphasizes focus on footwear',
       description: 'Complete shoes e-commerce platform with SuperAdmin, Seller, and User roles. Features include JWT authentication, KYC verification system, Razorpay payment gateway, product management, and order tracking.',
       technologies: ['MERN Stack', 'JWT Auth', 'Razorpay', 'KYC System', 'Redux', 'Material UI'],
       github: "https://github.com/Adarshpandey80/Shoe-Store-Mern",
