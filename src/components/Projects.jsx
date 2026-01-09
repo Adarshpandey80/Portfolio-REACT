@@ -38,6 +38,22 @@ const ProjectCard = ({ project, index }) => {
 
 const Projects = () => {
   const projects = [
+     {
+      title: 'ShoeVerse - E-commerce Platform',
+      description: 'Complete shoes e-commerce platform with SuperAdmin, Seller, and User roles. Features include JWT authentication, KYC verification system, Razorpay payment gateway, product management, and order tracking.',
+      technologies: ['MERN Stack', 'JWT Auth', 'Razorpay', 'KYC System', 'Redux', 'Material UI'],
+      github: "https://github.com/Adarshpandey80/Shoe-Store-Mern",
+      // live: "", 
+      icon: 'fas fa-shopping-cart'
+    },
+    {
+      title: 'TaskFlow Pro - Management System',
+      description: 'Advanced task management system with role-based access control. Features include JWT authentication, password reset via NodeMailer, real-time notifications, task assignment, progress tracking, and reporting dashboard.',
+      technologies: ['MERN Stack', 'JWT Auth', 'NodeMailer', 'Socket.io', 'Chart.js', 'Bootstrap'],
+      github: "https://github.com/Adarshpandey80/Task_Management",
+      // live: "",
+      icon: 'fas fa-tasks' 
+    },
     {
       title: "Traveling Website",
       description: "Implemented user login and registration with Firebase Authentication, allowing users to save their favorite destinations and trips. A comprehensive travel platform built with MERN stack for seamless travel planning and booking experiences.",
