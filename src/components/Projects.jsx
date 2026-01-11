@@ -75,7 +75,7 @@ const Projects = () => {
       description: 'Interactive learning platform where users can purchase courses, watch video lectures, track progress, take quizzes, and earn certificates. Built with React and Tailwind CSS.',
       technologies: ['React.js', 'Tailwind CSS', 'Context API', 'React Router', 'Video.js', 'Chart.js'],
       github: 'https://github.com/Adarshpandey80/TechRoot-LMS',
-      link: 'https://tech-root-lms.vercel.app/',
+      live: 'https://tech-root-lms.vercel.app/',
       icon: 'fas fa-graduation-cap'
     },
     {
