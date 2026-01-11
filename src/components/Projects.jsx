@@ -38,7 +38,7 @@ const ProjectCard = ({ project, index }) => {
 
 const Projects = () => {
   const projects = [
-     {
+    {
       title: 'ShoeVerse - Emphasizes focus on footwear',
       description: 'Complete shoes e-commerce platform with SuperAdmin, Seller, and User roles. Features include JWT authentication, KYC verification system, Razorpay payment gateway, product management, and order tracking.',
       technologies: ['MERN Stack', 'JWT Auth', 'Razorpay', 'KYC System', 'Redux', 'Material UI'],
@@ -52,7 +52,7 @@ const Projects = () => {
       technologies: ['MERN Stack', 'JWT Auth', 'NodeMailer', 'Socket.io', 'Chart.js', 'Bootstrap'],
       github: "https://github.com/Adarshpandey80/Task_Management",
       // live: "",
-      icon: 'fas fa-tasks' 
+      icon: 'fas fa-tasks'
     },
     {
       title: "Traveling Website",
@@ -69,6 +69,14 @@ const Projects = () => {
       icon: "fas fa-briefcase",
       github: "https://github.com/Adarshpandey80/WorkerFinder",
       live: "https://worker-finder.onrender.com"
+    },
+    {
+      title: 'Learning-Zone - Professional learning environment',
+      description: 'Interactive learning platform where users can purchase courses, watch video lectures, track progress, take quizzes, and earn certificates. Built with React and Tailwind CSS.',
+      technologies: ['React.js', 'Tailwind CSS', 'Context API', 'React Router', 'Video.js', 'Chart.js'],
+      github: 'https://github.com/Adarshpandey80/TechRoot-LMS',
+      link: 'https://tech-root-lms.vercel.app/',
+      icon: 'fas fa-graduation-cap'
     },
     {
       title: "Azautomobile E-commerce",
@@ -89,7 +97,7 @@ const Projects = () => {
     {
       title: "Simon Saga Game",
       description: "Contributed to the design and development of Simon Saga, a puzzle-based adventure game. Utilized modern web technologies to create an engaging and interactive gaming experience with smooth animations.",
-      technologies: ["JavaScript", "HTML5", "CSS3" , "DOM Manipulation"],
+      technologies: ["JavaScript", "HTML5", "CSS3", "DOM Manipulation"],
       icon: "fas fa-gamepad",
       github: "https://github.com/Adarshpandey80/SimonSage-Game",
       live: "https://simon-sage-game.vercel.app/"
@@ -102,7 +110,7 @@ const Projects = () => {
         <h2 className="section-title">Projects</h2>
         <div className="projects-container">
           {projects.map((project, index) => (
-            <ProjectCard 
+            <ProjectCard
               key={project.title}
               project={project}
               index={index}
