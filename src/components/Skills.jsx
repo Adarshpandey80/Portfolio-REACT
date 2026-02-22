@@ -73,11 +73,13 @@ const Skills = () => {
       icon: "fas fa-code",
       technologies: [
         { name: "C++", icon: "fab fa-cuttlefish" },
-        { name: "JavaScript", icon: "fab fa-js-square" }
+        { name: "JavaScript", icon: "fab fa-js-square" },
+        { name: "TypeScript", icon: "fab fa-js-square" }
       ],
       skills: [
         { name: "C++", level: 85 },
-        { name: "JavaScript", level: 90 }
+        { name: "JavaScript", level: 80 },
+        { name: "TypeScript", level: 80 }
       ]
     },
     {

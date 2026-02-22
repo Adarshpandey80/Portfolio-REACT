@@ -46,6 +46,13 @@ const Projects = () => {
       // live: "", 
       icon: 'fas fa-shopping-cart'
     },
+     {
+      title: 'ChatBoat AI - Intelligent Chat Assistant',
+      description: 'Advanced AI-powered chat application that allows users to search anything, generate images, and ask questions. Features include conversation history stored in MongoDB, ability to continue previous chats, LangChain integration for intelligent responses, and Hugging Face API for image generation. Video generation feature coming in next update.',
+      technologies: ['React.js', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'LangChain', 'Hugging Face API', 'GenAI API'],
+      github: "https://github.com/Adarshpandey80/UniGen-AI",
+      icon: 'fas fa-robot'
+    },
     {
       title: 'TaskFlow Pro - Management System',
       description: 'Advanced task management system with role-based access control. Features include JWT authentication, password reset via NodeMailer, real-time notifications, task assignment, progress tracking, and reporting dashboard.',
