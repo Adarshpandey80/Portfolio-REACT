@@ -34,7 +34,7 @@ const SkillCategory = ({ category, index }) => {
           <p className="skill-subtitle">{category.subtitle}</p>
         </div>
       </div>
-      
+
       <div className="skill-list">
         {category.technologies.map((tech, idx) => (
           <span key={idx} className="skill-item">
@@ -42,7 +42,7 @@ const SkillCategory = ({ category, index }) => {
           </span>
         ))}
       </div>
-      
+
       <div className="skill-levels">
         {category.skills.map((skill, idx) => (
           <div key={skill.name} className="skill-level">
@@ -51,7 +51,7 @@ const SkillCategory = ({ category, index }) => {
               <span>{skill.level}%</span>
             </div>
             <div className="skill-bar">
-              <div 
+              <div
                 ref={el => progressRefs.current[idx] = el}
                 className="skill-progress"
                 style={{ width: '0%' }}
@@ -80,6 +80,25 @@ const Skills = () => {
         { name: "C++", level: 85 },
         { name: "JavaScript", level: 80 },
         { name: "TypeScript", level: 80 }
+      ]
+    },
+    {
+      title: "AI / Generative AI",
+      subtitle: "AI tools & frameworks",
+      icon: "fas fa-brain",
+      technologies: [
+        { name: "OpenAI API", icon: "fas fa-robot" },
+        { name: "LangChain", icon: "fas fa-link" },
+        { name: "Hugging Face", icon: "fas fa-face-smile" },
+        { name: "REST APIs", icon: "fas fa-plug" },
+        { name: "Prompt Engineering", icon: "fas fa-keyboard" }
+      ],
+      skills: [
+        { name: "OpenAI API Integration", level: 85 },
+        { name: "LangChain", level: 80 },
+        { name: "Hugging Face Models", level: 75 },
+        { name: "Prompt Engineering", level: 85 },
+        { name: "AI App Development", level: 80 }
       ]
     },
     {
@@ -163,7 +182,7 @@ const Skills = () => {
         <h2 className="section-title">Technical Skills</h2>
         <div className="skills-container">
           {skillsData.map((category, index) => (
-            <SkillCategory 
+            <SkillCategory
               key={category.title}
               category={category}
               index={index}
