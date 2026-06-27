@@ -38,6 +38,14 @@ const ProjectCard = ({ project, index }) => {
 
 const Projects = () => {
   const projects = [
+     {
+      title: 'EasyService - Service Marketplace',
+      description: 'Scalable service marketplace platform enabling users to book services, manage orders, and connect with service providers through role-based dashboards. Features JWT authentication, RBAC (Admin, Shop Owner, User), RESTful APIs, real-time chat with Socket.io, worker assignment, service management, Razorpay payment integration, and AI-powered recommendation system.',
+      technologies: ['React.js', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB', 'JWT Auth', 'Socket.io', 'Razorpay', 'AI/ML'],
+      github: "https://github.com/Adarshpandey80/EasyService",
+      // live: "",
+      icon: 'fas fa-store'
+    },
     {
       title: 'ShoeVerse - Emphasizes focus on footwear',
       description: 'Complete shoes e-commerce platform with SuperAdmin, Seller, and User roles. Features include JWT authentication, KYC verification system, Razorpay payment gateway, product management, and order tracking.',
@@ -47,7 +55,7 @@ const Projects = () => {
       icon: 'fas fa-shopping-cart'
     },
      {
-      title: 'ChatBoat AI - Intelligent Chat Assistant',
+      title: 'UniGen AI - Intelligent Chat Assistant',
       description: 'Advanced AI-powered chat application that allows users to search anything, generate images, and ask questions. Features include conversation history stored in MongoDB, ability to continue previous chats, LangChain integration for intelligent responses, and Hugging Face API for image generation. Video generation feature coming in next update.',
       technologies: ['React.js', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB', 'LangChain', 'Hugging Face API', 'GenAI API'],
       github: "https://github.com/Adarshpandey80/UniGen-AI",
