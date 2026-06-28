@@ -42,13 +42,13 @@ const Projects = () => {
       title: 'EasyService - Service Marketplace',
       description: 'Scalable service marketplace platform enabling users to book services, manage orders, and connect with service providers through role-based dashboards. Features JWT authentication, RBAC (Admin, Shop Owner, User), RESTful APIs, real-time chat with Socket.io, worker assignment, service management, Razorpay payment integration, and AI-powered recommendation system.',
       technologies: ['React.js', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB', 'JWT Auth', 'Socket.io', 'Razorpay', 'AI/ML'],
-      github: "https://github.com/Adarshpandey80/EasyService",
+      github: "https://github.com/Adarshpandey80/Easy-Service",
       // live: "",
       icon: 'fas fa-store'
     },
     {
       title: 'ShoeVerse - Emphasizes focus on footwear',
-      description: 'Complete shoes e-commerce platform with SuperAdmin, Seller, and User roles. Features include JWT authentication, KYC verification system, Razorpay payment gateway, product management, and order tracking.',
+       description: 'A comprehensive MERN stack footwear e-commerce platform featuring a three-tier role-based architecture (SuperAdmin, Seller, and User) with secure JWT authentication and authorization. Includes a complete KYC verification system for sellers, integrated Razorpay payment gateway for seamless transactions, and an intuitive admin dashboard with sales analytics and user management.',
       technologies: ['MERN Stack', 'JWT Auth', 'Razorpay', 'KYC System', 'Redux', 'Material UI'],
       github: "https://github.com/Adarshpandey80/Shoe-Store-Mern",
       // live: "", 
