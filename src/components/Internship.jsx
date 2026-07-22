@@ -44,8 +44,8 @@ const Internships = () => {
   
     {
       company: "Cybrom Technology",
-      role: "Web Development Intern",
-      duration: "2 Months",
+      role: "Software Development Intern",
+      duration: "6 Months",
       icon: "fas fa-laptop-code",
       details: [
         "Developed and optimized scalable web applications using MongoDB, Express.js, React.js, and Node.js.",

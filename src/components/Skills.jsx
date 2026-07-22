@@ -106,10 +106,11 @@ const Skills = () => {
       subtitle: "User interface technologies",
       icon: "fas fa-paint-brush",
       technologies: [
+         { name: "React.js", icon: "fab fa-react" },
+        { name: "Next.js", icon: "fab fa-react" },
         { name: "HTML", icon: "fab fa-html5" },
         { name: "CSS", icon: "fab fa-css3-alt" },
         { name: "JavaScript", icon: "fab fa-js-square" },
-        { name: "React.js", icon: "fab fa-react" },
         { name: "Redux Toolkit", icon: "fas fa-cube" },
         { name: "Bootstrap", icon: "fab fa-bootstrap" },
         { name: "Material UI", icon: "fas fa-palette" },
@@ -117,6 +118,7 @@ const Skills = () => {
       ],
       skills: [
         { name: "React.js", level: 88 },
+        { name: "Next.js", level: 85 },
         { name: "CSS Frameworks", level: 82 }
       ]
     },
@@ -130,7 +132,8 @@ const Skills = () => {
       ],
       skills: [
         { name: "Node.js", level: 80 },
-        { name: "Express.js", level: 85 }
+        { name: "Next.js", level: 85 },
+        { name: "Express.js", level: 85 },
       ]
     },
     {

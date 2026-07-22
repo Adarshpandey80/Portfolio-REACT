@@ -17,10 +17,11 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">Adarsh Pandey</h1>
-            <h2 className="hero-subtitle">MERN Stack Developer</h2>
+            <h2 className="hero-subtitle">Software Developer</h2>
             <p className="hero-description">
-              Passionate developer with strong proficiency in JavaScript, React.js, Node.js, Express.js, and MongoDB. 
-              Eager to leverage problem-solving skills to build scalable, high-performance web applications.
+              A Full-Stack Developer passionate about building scalable web applications and AI-powered solutions. 
+              I specialize in JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js, and MongoDB, with experience creating secure, responsive, and high-performance applications. 
+              I'm constantly learning new technologies and enjoy solving real-world problems through innovative software development.
             </p>
             <div className="hero-buttons">
               <a 
