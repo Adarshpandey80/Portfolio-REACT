@@ -93,14 +93,14 @@ const Projects = () => {
       live: 'https://tech-root-lms.vercel.app/',
       icon: 'fas fa-graduation-cap'
     },
-    {
-      title: "Azautomobile E-commerce",
-      description: "Azautomobile is a fully responsive eCommerce website that allows users to browse and purchase vehicles including cars, bikes, and cycles. The platform features a clean UI with intuitive navigation and product listings.",
-      technologies: ["HTML", "CSS", "JavaScript", "LocalStorage", "Responsive Design"],
-      icon: "fas fa-car",
-      github: "https://github.com/Adarshpandey80/AzAutomobils",
-      live: "https://add-to-card-az-automobile-dzrr.vercel.app/"
-    },
+    // {
+    //   title: "Azautomobile E-commerce",
+    //   description: "Azautomobile is a fully responsive eCommerce website that allows users to browse and purchase vehicles including cars, bikes, and cycles. The platform features a clean UI with intuitive navigation and product listings.",
+    //   technologies: ["HTML", "CSS", "JavaScript", "LocalStorage", "Responsive Design"],
+    //   icon: "fas fa-car",
+    //   github: "https://github.com/Adarshpandey80/AzAutomobils",
+    //   live: "https://add-to-card-az-automobile-dzrr.vercel.app/"
+    // },
     {
       title: "Weather Forecast App",
       description: "Developed a React-based weather application integrating with OpenWeatherMap API to display real-time and forecasted weather data for global locations with interactive charts and location-based services.",
