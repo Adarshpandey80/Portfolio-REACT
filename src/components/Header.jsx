@@ -41,7 +41,7 @@ const Header = () => {
         </a>
         <nav>
           <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-            {['home', 'about', 'internships', 'skills', 'projects', 'contact'].map((item) => (
+            {['home', 'about', 'resume', 'internships', 'skills', 'projects', 'contact'].map((item) => (
               <li key={item}>
                 <a 
                   href={`#${item}`} 

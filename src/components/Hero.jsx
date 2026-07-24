@@ -25,6 +25,16 @@ const Hero = () => {
             </p>
             <div className="hero-buttons">
               <a 
+                href="#resume" 
+                className="btn btn-outline"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('resume');
+                }}
+              >
+                Resume
+              </a>
+              <a 
                 href="#projects" 
                 className="btn btn-primary"
                 onClick={(e) => {
