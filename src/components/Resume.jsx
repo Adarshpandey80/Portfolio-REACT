@@ -14,7 +14,7 @@ const Resume = () => {
       tag: 'Education, internships, and core experience',
       summary: 'A concise resume highlighting my academic background, internship experience, technical skills, and full-stack development projects.',
       highlights: ['Education', 'Internship Experience', 'Full-Stack Development'],
-      file: '/Adarsh_Pandey_CV.pdf',
+      file: '/MyResume.pdf',
       actionLabel: 'Open National CV'
     },
     {
@@ -23,7 +23,7 @@ const Resume = () => {
       tag: 'Global-ready engineering profile',
       summary: 'A resume tailored for international opportunities, showcasing software engineering expertise, technical skills, project experience, and collaborative development practices.',
       highlights: ['Full-Stack Engineering', 'Modern Web Technologies', 'Scalable Application Development' , 'Collaboration & Problem Solving'],
-      file: '/MyResume.pdf',
+      file: '/Adarsh_Pandey_CV.pdf',
       actionLabel: 'Open International CV'
     }
   ];
