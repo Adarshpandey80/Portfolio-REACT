@@ -176,6 +176,19 @@ const Skills = () => {
         { name: "Agile", level: 85 },
         { name: "Scrum", level: 80 }
       ]
+    },
+    {
+      title: "  DevOps",
+      subtitle: " DevOps tools",
+      icon: "fas fa-cogs",
+      technologies: [
+        { name: "Docker", icon: "fab fa-docker" },
+        { name: "GitHub Actions", icon: "fab fa-github" }
+      ],
+      skills: [
+        { name: "Docker", level: 75 },
+        { name: "GitHub Actions", level: 78 }
+      ]
     }
   ];
 
